@@ -5,6 +5,7 @@ const listEl = document.querySelector('#list-id');
 const clearBtnEl = document.querySelector('#clear-button-id');
 
 btnEl.onclick = () => {
+    if (!inputEl.value) return ;
     let newListItem = document.createElement('li');
     newListItem.innerText = inputEl.value;
     listEl.append(newListItem);
@@ -14,4 +15,6 @@ btnEl.onclick = () => {
 clearBtnEl.onclick = () => {
     listEl.querySelectorAll('*').forEach(e => e.remove());
 }
+
+                                           
 
