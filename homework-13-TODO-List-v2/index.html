@@ -1,20 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
     <title>TODO List V2</title>
-</head>
-<body>
-    <input placeholder="Enter task here" id="input-id" type="text">
-    <button id="button-id" >Add to list</button>
-    <button id="clear-button-id" >Clear list</button>
-
-    <ul id="list-id">
-    </ul>
-
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <input placeholder="Enter task here" id="input-id" type="text" />
+        <div class="button-section">
+            <button id="button-id">Add to list</button>
+            <button id="clear-button-id">Clear list</button>
+            <button id="check-all-btn">Check All</button>
+        </div>
+      
+      </div>
+      <ul id="list-id"></ul>
+    </div>
+  </body>
 </html>
