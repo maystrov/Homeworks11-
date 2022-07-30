@@ -27,7 +27,7 @@ class Component {
     }
 
     hide() {
-        this.style.opacity = '0'
+        this.el.style.opacity = '0'
     }
 
     show() {
