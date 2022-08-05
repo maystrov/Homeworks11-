@@ -1,13 +1,13 @@
 
-SIZE_SMALL = {price: 50, calories: 20};
-SIZE_MEDIUM = {price: 75, calories: 30};
-SIZE_LARGE = {price: 100, calories: 40};
+const SIZE_SMALL = {price: 50, calories: 20};
+const SIZE_MEDIUM = {price: 75, calories: 30};
+const SIZE_LARGE = {price: 100, calories: 40};
 
-CHEESE = {label: 'cheese', price: 10, calories: 20};
-SALAD = {label: 'salad', price: 20, calories: 5};
-POTATO = {label: 'potato', price: 15, calories: 10};
-SPICE = {label: 'spice', price: 15, calories: 0};
-MAYO = {label: 'mayo', price: 20, calories: 5};
+const CHEESE = {label: 'cheese', price: 10, calories: 20};
+const SALAD = {label: 'salad', price: 20, calories: 5};
+const POTATO = {label: 'potato', price: 15, calories: 10};
+const SPICE = {label: 'spice', price: 15, calories: 0};
+const MAYO = {label: 'mayo', price: 20, calories: 5};
 
 function Burger(size, toppings = []) {
   this.price = size.price;
@@ -35,7 +35,7 @@ function Burger(size, toppings = []) {
   }
 }
 
-const burger = new Burger(SIZE_LARGE, [MAYO, POTATO ]);
+const burger = new Burger(SIZE_LARGE);
 burger.addTopping(CHEESE);
 
 console.log('Burger price with toppings: ' + burger.getPrice() + ' grn')
